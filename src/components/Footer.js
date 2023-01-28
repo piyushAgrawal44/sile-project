@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -16,30 +17,30 @@ function Footer() {
                 <div className="flex justify-evenly flex-wrap  sm:space-x-5 sm:flex-nowrap">
                     <div className="min-w-[100px] mb-5 md:mb-0">
                         <h1 className='font-bold text-xl mb-4'>Links</h1>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Home</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">About</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Home</a>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Home</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/about">About</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Home</Link>
                     </div>
 
                     <div className="min-w-[100px] mb-5 md:mb-0">
                         <h1 className='font-bold text-xl mb-4'>Products</h1>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Pricing</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Website</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Games</a>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/pricing">Pricing</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Website</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Games</Link>
                     </div>
 
                     <div className="min-w-[100px] mb-5 md:mb-0">
                         <h1 className='font-bold text-xl mb-4'>Business</h1>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Pricing</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Website</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Games</a>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/pricing">Pricing</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Website</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Games</Link>
                     </div>
 
                     <div className="min-w-[100px] mb-5 md:mb-0">
                         <h1 className='font-bold text-xl mb-4'>Business</h1>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Pricing</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Website</a>
-                        <a className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' href="/">Games</a>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/pricing">Pricing</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Website</Link>
+                        <Link className='cursor-pointer block text-sm font-light font-["Inter"] mb-2' to="/">Games</Link>
                     </div>
                 </div>
             </div>
