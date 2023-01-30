@@ -53,3 +53,17 @@ body{
 .sub-color3{
   background-color: rgb(255, 215, 170);
 }
+
+/* Slider CSS */
+@keyframes scroll {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.animate {
+  animation: scroll 20s linear infinite;
+}

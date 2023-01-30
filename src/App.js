@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import LoadingBar from 'react-top-loading-bar'
 import Pricing from './components/Pricing';
+import Community from './components/Community';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     display: "hidden"
   });
 
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(10);
   return (
     <>
       <Router>
@@ -34,9 +35,10 @@ function App() {
 
 
         <Routes>
-          <Route exact path='/' element={<Home setAppAlert={setAppAlert} setProgress={setProgress} />} />
+          <Route exact path='/' element={<Home key="Home" setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/about' element={<About setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/pricing' element={<Pricing setAppAlert={setAppAlert} setProgress={setProgress} />} />
+          <Route exact path='/community' element={<Community setAppAlert={setAppAlert} setProgress={setProgress} />} />
 
           <Route exact path='/login' element={<Login setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/register' element={<Register setAppAlert={setAppAlert} setProgress={setProgress} />} />
