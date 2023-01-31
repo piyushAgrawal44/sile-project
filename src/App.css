@@ -67,3 +67,6 @@ body{
 .animate {
   animation: scroll 20s linear infinite;
 }
+.box-shadow-hover-grey-10:hover{
+  box-shadow: 1px 1px 15px grey;
+}

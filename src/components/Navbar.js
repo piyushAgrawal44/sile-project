@@ -24,7 +24,7 @@ function Navbar() {
                 <div className="flex justify-end space-x-4 items-center">
 
 
-                    <button className='px-5 py-3 text-white font-normal text-sm bg-[#565ADD] hover:shadow-2xl hover:shadow-violet-300 duration-75 hover:translate-y-[-1px] rounded-[40px]'>Sign in Try SILE for Free</button>
+                    <button className='px-5 py-3 text-white font-normal text-sm bg-[#565ADD] hover:shadow-2xl hover:shadow-violet-300 duration-75 hover:translate-y-[-1px] rounded-[40px] hidden sm:block'>Sign in Try SILE for Free</button>
                     <button className="btn bg-[#EFF0FF] px-3 py-2 rounded-full" onClick={showMenu} id="menuBtn">
                         {(menu === 1) && <i className="bi bi-list text-2xl text-blue-600 font-bold"></i>}
                         {(menu === 2) && <i className="bi bi-x-octagon  text-2xl font-bold"></i>}
@@ -72,16 +72,20 @@ function Navbar() {
                             <div className='flex flex-col'>
                                 <Link to="/new" className='mb-2 font-medium text-lg hover:underline'><i className="bi bi-bookmarks"></i> Bolg</Link>
                                 <Link to="/new" className='mb-2 font-medium text-lg hover:underline'><i className="bi bi-card-list"></i> Expert Collective</Link>
-                                <Link to="/new" className='mb-2 font-medium text-lg hover:underline'><i className="bi bi-people"></i> Community</Link>
+                                <Link to="/community" className='mb-2 font-medium text-lg hover:underline'><i className="bi bi-people"></i> Community</Link>
                             </div>
                         </div>
                     </div>
 
-                    <div className='px-4 py-5  border-b-2'>
+                    <div className='md-2 sm:mb-0 px-4 py-5  border-b-2'>
                         <Link className="font-medium text-lg sm:text-2xl hover:underline" to="/">Sign in Try SILE for Free</Link>
                     </div>
 
 
+
+                    <div className='px-4 py-5  border-b-2 block sm:hidden'>
+                    <button className='px-5 py-3 text-white font-normal text-sm bg-[#565ADD] hover:shadow-2xl hover:shadow-violet-300 duration-75 hover:translate-y-[-1px] rounded-[40px] '>Sign in Try SILE for Free</button>
+                    </div>
                 </div>
             </div>
         </>

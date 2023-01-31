@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import img1 from "../images/games-2.jpg";
-// import img2 from "../images/man.png";
 import img3 from "../images/enterprise.webp";
 import Carousel from './Carousel';
 import Slider from './Slider';
@@ -30,7 +29,7 @@ function Home(props) {
                             We provide complete business management solution and develop custom games for employee traing. SILE gives wing to your business.
                         </h3>
                         <br />
-                        <button className='bg-[#565ADD] px-16 py-5 text-white font-semibold rounded-[40px] text-2xl'>Get started with SILE</button>
+                        <button className='bg-[#565ADD] px-5 sm:px-16 py-3 sm:py-5 text-white font-semibold rounded-[40px] text-lg sm:text-2xl'>Get started with SILE</button>
                     </div>
                     <div className='max-w-[600px]'>
                         <div className="bg-[#9F92EC] px-5 sm:px-16 py-5 sm:py-10 rounded-[30px]">
@@ -58,7 +57,7 @@ function Home(props) {
 
                     <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center">
                         <div className="card bg-[#2B1C50] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
-                            <img src={img1} className="rounded-3xl  h-[100%] max-h-[800px] m-auto" alt="" />
+                            <img src={img1} className="rounded-3xl max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
                         </div>
                         <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center  mt-3 md:mt-0'>
                             <div className='pt-3 text-3xl hidden lg:block'>
@@ -86,13 +85,13 @@ function Home(props) {
                             </div>
                         </div>
                         <div className="card bg-[#AFB0ED] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%] order-1 md:order-2">
-                            <img src={img1} className="rounded-3xl  h-[100%] max-h-[800px] m-auto" alt="" />
+                            <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
                         </div>
                     </div>
 
                     <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-80px]">
                         <div className="card bg-[#EEF0FF] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
-                            <img src={img1} className="rounded-3xl  h-[100%] max-h-[800px] m-auto" alt="" />
+                            <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
                         </div>
                         <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center  mt-3 md:mt-0'>
                             <div className='pt-3 text-3xl hidden lg:block'>
