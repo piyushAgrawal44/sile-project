@@ -3,7 +3,7 @@ import video from "../videos/aboutus.mp4";
 import team1 from "../images/team1.webp";
 import team2 from "../images/team2.webp";
 import news1 from "../images/news.webp";
-import Slider from './Slider'
+import Slider from './sub_components/Slider'
 
 function About(props) {
   useEffect(() => {

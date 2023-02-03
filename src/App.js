@@ -4,14 +4,15 @@ import Home from './components/Home';
 import About from './components/About';
 import Login from './components/Login';
 import Register from './components/Register';
-import Alert from './components/Alert';
+import Alert from './components/sub_components/Alert';
 import NotFound from './components/NotFound';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import LoadingBar from 'react-top-loading-bar'
 import Pricing from './components/Pricing';
-import Community from './components/Community';
+import Community from './components/resources/Community';
+import ExpertCollective from './components/resources/ExpertCollective';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route exact path='/about' element={<About setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/pricing' element={<Pricing setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/community' element={<Community setAppAlert={setAppAlert} setProgress={setProgress} />} />
+          <Route exact path='/experts-collective' element={<ExpertCollective setAppAlert={setAppAlert} setProgress={setProgress} />} />
 
           <Route exact path='/login' element={<Login setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/register' element={<Register setAppAlert={setAppAlert} setProgress={setProgress} />} />

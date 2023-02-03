@@ -47,13 +47,13 @@ function Footer() {
             <div className="social_links bg-[#f6f6fb] px-5 pt-5 flex justify-center md:justify-between flex-wrap md:flex-nowrap md:space-x-4 items-center ">
                 <div className="social_icons flex justify-center md:justify-start space-x-2 mb-2">
                     <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-100">
-                        <i class="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                     </Link>
                     <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-100">
-                        <i class="bi bi-facebook"></i>
+                        <i className="bi bi-facebook"></i>
                     </Link>
                     <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-100">
-                        <i class="bi bi-twitter"></i>
+                        <i className="bi bi-twitter"></i>
                     </Link>
                 </div>
                 <div className="copyright font-semibold mb-2 text-center md:text-end">

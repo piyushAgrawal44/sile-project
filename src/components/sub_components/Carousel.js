@@ -1,6 +1,6 @@
 import React from 'react'
-import img1 from "../images/company.svg";
-import img2 from "../images/man.png";
+import img1 from "../../images/company.svg";
+import img2 from "../../images/man.png";
 
 function Carousel() {
 

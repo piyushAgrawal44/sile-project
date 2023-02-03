@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import news1 from "../images/news.webp";
-import Carousel from './Carousel';
+import news1 from "../../images/news.webp";
+import Carousel from '../sub_components/Carousel';
 
 function Community(props) {
     useEffect(() => {

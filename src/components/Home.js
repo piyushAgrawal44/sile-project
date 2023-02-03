@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import img1 from "../images/games-2.jpg";
 import img3 from "../images/enterprise.webp";
-import Carousel from './Carousel';
-import Slider from './Slider';
-import FAQ from './FAQ';
+import Carousel from './sub_components/Carousel';
+import Slider from './sub_components/Slider';
+import FAQ from './sub_components/FAQ';
 
 function Home(props) {
 
@@ -46,67 +46,86 @@ function Home(props) {
                     <Slider />
                 </div>
 
-                <div className='px-5 sm:px-10 mt-[120px] text-center'>
-                    <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl'>What We Offer</h1>
-                    <h3 className='text-lg sm:text-2lg md:text-3lg mt-3'>
-                        We offer wide range of services that can help your business to grow !
-                    </h3>
-                </div>
-
-                <div className="what_we_offer mt-16 px-5 sm:px-16">
-
-                    <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center">
-                        <div className="card bg-[#2B1C50] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
-                            <img src={img1} className="rounded-3xl max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
-                        </div>
-                        <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center  mt-3 md:mt-0'>
-                            <div className='pt-3 text-3xl hidden lg:block'>
-                            <i class="bi bi-asterisk"></i>
-                            </div>
-                            <div className="sm:max-w-[500px]">
-                                <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px]'>Application Development</h1>
-                                <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
-                                    Start recording your screen and camera easily. Works on any device using Loom’s desktop and mobile apps or Chrome extension.
-                                </h3>
-                            </div>
-                        </div>
+                <div className='mt-[120px]'>
+                    <div className='px-5 sm:px-10 text-center'>
+                        <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl'>What We Offer</h1>
+                        <h3 className='text-lg sm:text-2lg md:text-3lg mt-3'>
+                            We offer wide range of services that can help your business to grow !
+                        </h3>
                     </div>
 
-                    <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-40px]">
-                        <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center mt-3 md:mt-0 order-2 md:order-1'>
-                            <div className='pt-3 text-3xl hidden lg:block'>
-                                <i className="bi bi-bookmark-check"></i>
+                    <div className="what_we_offer mt-16 px-5 sm:px-16">
+
+                        <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center">
+                            <div className="card bg-[#2B1C50] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
+                                <img src={img1} className="rounded-3xl max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
                             </div>
-                            <div className="sm:max-w-[500px]">
-                                <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px]'>Application Development</h1>
-                                <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
-                                    Start recording your screen and camera easily. Works on any device using Loom’s desktop and mobile apps or Chrome extension.
-                                </h3>
+                            <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center  mt-3 md:mt-0'>
+                                <div className='pt-3 text-3xl hidden lg:block text-violet-500'>
+                                    <i className="bi bi-bookmark-check"></i>
+                                </div>
+                                <div className="sm:max-w-[500px]">
+                                    <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px] md:leading-10'>Choose a game by purpose</h1>
+                                    <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam in saepe doloremque, expedita ipsum, cupiditate commodi amet rem nam nihil dolores delectus culpa ipsam porro quasi aliquid vero accusamus sit.
+                                    </h3>
+                                </div>
                             </div>
                         </div>
-                        <div className="card bg-[#AFB0ED] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%] order-1 md:order-2">
-                            <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
+
+                        <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-40px]">
+                            <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center mt-3 md:mt-0 order-2 md:order-1'>
+                                <div className='pt-3 text-3xl hidden lg:block text-violet-500'>
+                                    <i className="bi bi-bookmark-check"></i>
+                                </div>
+                                <div className="sm:max-w-[500px]">
+                                    <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px] md:leading-10'>Run the session yourself or hire from community of 100+ facilitators</h1>
+                                    <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, laborum quos error sapiente laboriosam ullam vel in molestiae rerum atque eius sequi et. Quo ipsa distinctio numquam alias eaque vel.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="card bg-[#AFB0ED] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%] order-1 md:order-2">
+                                <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
+                            </div>
                         </div>
+
+                        <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-80px]">
+                            <div className="card bg-[#EEF0FF] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
+                                <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
+                            </div>
+                            <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center  mt-3 md:mt-0'>
+                                <div className='pt-3 text-3xl hidden lg:block'>
+                                    <i className="bi bi-bookmark-check text-violet-500"></i>
+                                </div>
+                                <div className="sm:max-w-[500px]">
+                                    <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px] md:leading-10'>Run fun training program</h1>
+                                    <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde delectus, blanditiis voluptas assumenda quos magni doloremque quasi reprehenderit corporis aliquid, modi, nostrum numquam nam non veniam saepe in at aut?
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-120px]">
+                            <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center mt-3 md:mt-0 order-2 md:order-1'>
+                                <div className='pt-3 text-3xl hidden lg:block text-violet-500'>
+                                    <i className="bi bi-bookmark-check"></i>
+                                </div>
+                                <div className="sm:max-w-[500px]">
+                                    <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px] md:leading-10'>Reflect with game analytic report</h1>
+                                    <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, laborum quos error sapiente laboriosam ullam vel in molestiae rerum atque eius sequi et. Quo ipsa distinctio numquam alias eaque vel.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="card bg-[#AFB0ED] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%] order-1 md:order-2">
+                                <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
+                            </div>
+                        </div>
+                        
+
                     </div>
-
-                    <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-80px]">
-                        <div className="card bg-[#EEF0FF] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
-                            <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
-                        </div>
-                        <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center  mt-3 md:mt-0'>
-                            <div className='pt-3 text-3xl hidden lg:block'>
-                                <i className="bi bi-bookmark-check"></i>
-                            </div>
-                            <div className="sm:max-w-[500px]">
-                                <h1 className='font-semibold text-xl sm:text-2xl md:text-[35px]'>Application Development</h1>
-                                <h3 className='text-2sm sm:text-lg md:text-xl mt-5 text-slate-500 font-medium'>
-                                    Start recording your screen and camera easily. Works on any device using Loom’s desktop and mobile apps or Chrome extension.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
 
 

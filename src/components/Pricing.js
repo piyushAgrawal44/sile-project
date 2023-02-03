@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Slider from './Slider';
-import FAQ from './FAQ';
+import Slider from './sub_components/Slider';
+import FAQ from './sub_components/FAQ';
 
 function Pricing(props) {
     useEffect(() => {
