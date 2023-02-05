@@ -7,8 +7,8 @@ function Footer() {
             <div className="px-5 sm:px-10 translate-y-[30px]">
                 <div className="bg-white box-shadow-grey  px-5 sm:px-10 py-10 sm:py-12 max-w-[800px] m-auto  rounded-3xl ">
                     <div className="flex flex-wrap justify-between md:flex-nowrap items-center">
-                        <input type="text" className='px-4 py-3 border-black border-2 rounded-3xl mb-3 sm:mb-0 max-w-[100%]' placeholder='Enter your email' />
-                        <button className='bg-blue-700 px-5 py-3 rounded-3xl text-white text-sm mb-3 sm:mb-0'>Contact Now</button>
+                        <span className='font-bold text-xl'>Assumenda sint natus, similique, ullam unde harum, sit expedita ratione earum eaque id ipsum sed </span>
+                        <button className='bg-[#565ADD] min-w-fit px-5 py-3 rounded-3xl text-white text-sm mb-3 sm:mb-0'>Contact Now</button>
                     </div>
                 </div>
             </div>
@@ -46,13 +46,13 @@ function Footer() {
             </div>
             <div className="social_links bg-[#f6f6fb] px-5 pt-5 flex justify-center md:justify-between flex-wrap md:flex-nowrap md:space-x-4 items-center ">
                 <div className="social_icons flex justify-center md:justify-start space-x-2 mb-2">
-                    <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-100">
+                    <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-200">
                         <i className="bi bi-instagram"></i>
                     </Link>
-                    <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-100">
+                    <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-200">
                         <i className="bi bi-facebook"></i>
                     </Link>
-                    <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-100">
+                    <Link to='/' className="rounded-full py-2 px-3 bg-[#EFF0FF] text-violet-600 text-lg sm:text-xl hover:bg-violet-600 hover:text-white hover:shadow-2xl hover:shadow-gray-200 duration-200">
                         <i className="bi bi-twitter"></i>
                     </Link>
                 </div>

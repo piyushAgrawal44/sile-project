@@ -17,23 +17,23 @@ function Home(props) {
         <>
             <div className="">
                 <div className="banner bg-[#D1D1F7] px-5 sm:px-16 py-12 pt-14 flex items-center justify-between md:space-x-4 flex-wrap md:flex-nowrap">
-                    <div className='mb-5 md:mb-0 max-w-[600px]'>
-                        <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl mb-2'>
+                    <div className='mb-5 md:mb-0 max-w-[600px] xl:max-w-[1000px]'>
+                        <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl  mb-2'>
                             SILE on.
                         </h1>
-                        <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl'>
+                        <h1 className='font-bold text-4xl sm:text-5xl md:text-6xl '>
                             Problem gone.
                         </h1>
                         <br />
-                        <h3 className='text-lg'>
+                        <h3 className='text-lg lg:text-xl '>
                             We provide complete business management solution and develop custom games for employee traing. SILE gives wing to your business.
                         </h3>
                         <br />
                         <button className='bg-[#565ADD] px-5 sm:px-16 py-3 sm:py-5 text-white font-semibold rounded-[40px] text-lg sm:text-2xl'>Get started with SILE</button>
                     </div>
-                    <div className='max-w-[600px]'>
+                    <div className='max-w-[600px] xl:max-w-[1000px]'>
                         <div className="bg-[#9F92EC] px-5 sm:px-16 py-5 sm:py-10 rounded-[30px]">
-                            <img src={img1} className="w-[100%] max-w-[600px] m-auto rounded-md" alt="" />
+                            <img src={img1} className="w-[100%] max-w-[600px] xl:max-w-[800px] m-auto rounded-md" alt="" />
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ function Home(props) {
                         </h3>
                     </div>
 
-                    <div className="what_we_offer mt-16 px-5 sm:px-16">
+                    <div className="what_we_offer mt-16 px-5 sm:px-10">
 
                         <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center">
                             <div className="card bg-[#2B1C50] py-5 px-5 sm:px-16 sm:py-16 rounded-[35px] lg:rounded-[40px] text-center w-[100%] md:w-[55%]">
@@ -106,7 +106,7 @@ function Home(props) {
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div className="flex flex-wrap sm:px-10 md:flex-nowrap md:space-x-16 mb-12 lg:mb-0 items-center lg:translate-y-[-120px]">
                             <div className='flex md:space-x-4 w-[100%] md:w-[45%] justify-center mt-3 md:mt-0 order-2 md:order-1'>
                                 <div className='pt-3 text-3xl hidden lg:block text-violet-500'>
@@ -123,7 +123,7 @@ function Home(props) {
                                 <img src={img1} className="rounded-3xl  max-h-[300px] sm:max-h-[500px] md:max-h-[800px] m-auto" alt="" />
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -151,16 +151,17 @@ function Home(props) {
                         </div>
                     </div>
                 </div>
+            </div>
 
-                {/* Our Team Part */}
-                {/* <div className='px-5 sm:px-10 mt-[120px] text-center'>
+            {/* Our Team Part */}
+            {/* <div className='px-5 sm:px-10 mt-[120px] text-center'>
                     <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl'>Our Team</h1>
                     <h3 className='text-lg sm:text-2lg md:text-3lg mt-3'>
                         We have multiple experts of multiple fields
                     </h3>
-                </div> 
+                </div>  */}
 
-                <div className="px-5 sm:px-10 mt-16">
+            {/* <div className="px-5 sm:px-10 mt-16">
                     <div className="flex flex-wrap sm:flex-nowrap sm:space-x-10 text-center justify-center sm:text-start mb-10 items-center">
                         <div className="card bg-sub-color1 py-5 px-5 md:px-16 md:py-16 rounded-3xl text-center">
                             <img src={img2} className="rounded-full h-[100%] max-h-[250px] m-auto" alt="" />
@@ -208,17 +209,14 @@ function Home(props) {
 
                 </div> */}
 
-                {/* <div className='px-5 sm:px-10 mt-[120px] text-center'>
+            {/* <div className='px-5 sm:px-10 mt-[120px] text-center'>
                     <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl'>Our Clients Review</h1>
                     <h3 className='text-lg sm:text-2lg md:text-3lg mt-3'>
                         Customer choice is 1st preference. We care about our clients obssesions.
                     </h3>
                 </div> */}
-
-                <div className="mt-[80px]">
-                    <Carousel />
-                </div>
-
+            <div className="mt-[80px]">
+                <Carousel />
             </div>
 
             <FAQ />

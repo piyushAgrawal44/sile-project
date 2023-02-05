@@ -4,7 +4,7 @@
 }
 body{
   /* background-color: #F3F3F3; */
-  max-width: 2000px;
+  max-width: 2400px;
   margin: auto; 
 }
 .scrollbar-hidden{
@@ -17,33 +17,15 @@ body{
 .disabled{
   opacity: 0.6;
   cursor: context-menu !important;
-  
 }
-.bg-thd-color-violet-90{
-  background-color: #312454;
-  opacity: 0.79;
-}
+
 .box-shadow-grey-10{
   box-shadow: 1px 1px 10px  #888888 ;
 }
 .box-shadow-grey{
   box-shadow: 1px 1px 12px  #888888 ;
 }
-.base-color-600{
-  background-color: rgb(255, 253, 99,0.6);
-}
-.base-color-700{
-  background-color: rgb(255, 253, 99,0.7);
-}
-.base-color-800{
-  background-color: rgb(255, 253, 99,0.8);
-}
-.base-color-900{
-  background-color: rgb(255, 253, 99,0.9);
-}
-.base-color{
-  background-color: rgb(255, 253, 99);
-}
+
 .sub-color1{
   background-color: rgb(199, 208, 255);
 }
@@ -69,4 +51,26 @@ body{
 }
 .box-shadow-hover-grey-10:hover{
   box-shadow: 1px 1px 15px grey;
+}
+.top-100vh-80px{
+  height: calc(100vh - 80px);
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -103,11 +103,11 @@ function Carousel() {
 
 
             <div className="flex items-center  justify-center space-x-4 mt-3 translate-y-[-40px]">
-                <span className='btn1 cursor-pointer rounded-full bg-white shadow-lg px-3 py-2 flex items-center justify-center' onClick={leftClick}>
-                    <i className="bi bi-arrow-left text-2xl font-extrabold "></i>
+                <span className='btn1 cursor-pointer rounded-full bg-white shadow-lg hover:shadow-xl px-3 py-2 flex items-center justify-center' onClick={leftClick}>
+                    <i className="bi bi-arrow-left text-2xl font-extrabold"></i>
                 </span>
-                <span className='btn2 cursor-pointer rounded-full bg-white shadow-lg px-3 py-2 flex items-center justify-center' onClick={rightClick}>
-                    <i className="bi bi-arrow-right text-2xl font-extrabold "></i>
+                <span className='btn2 cursor-pointer rounded-full bg-white shadow-lg hover:shadow-xl px-3 py-2 flex items-center justify-center' onClick={rightClick}>
+                    <i className="bi bi-arrow-right text-2xl font-extrabold"></i>
                 </span>
             </div>
         </>
