@@ -64,8 +64,8 @@ function Navbar() {
                         </div>
                         <div className=' py-3 px-2 services hidden' id='services'>
                             <div className='flex flex-col'>
-                                <Link onClick={showMenu} to="/new" className='font-normal text-lg mb-1'><i className="bi bi-card-list"></i> Listing our offering</Link>
-                                <Link onClick={showMenu} to="/new" className='font-normal text-lg mb-1'><i className="bi bi-card-list"></i> Previous Project</Link>
+                                <Link onClick={showMenu} to="/ouroffering" className='font-normal text-lg mb-1'><i className="bi bi-card-list"></i> Listing our offering</Link>
+                                <Link onClick={showMenu} to="/previousprojects" className='font-normal text-lg mb-1'><i className="bi bi-card-list"></i> Previous Project</Link>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ function Navbar() {
                         </div>
                         <div className=' py-3 px-2 resources hidden' id='resources'>
                             <div className='flex flex-col'>
-                                <Link onClick={showMenu} to="/new" className=' font-normal text-lg mb-1'><i className="bi bi-bookmarks"></i> Bolg</Link>
+                                <Link onClick={showMenu} to="/blog" className=' font-normal text-lg mb-1'><i className="bi bi-bookmarks"></i> Bolg</Link>
                                 <Link onClick={showMenu} to="/experts-collective" className=' font-normal text-lg mb-1'><i className="bi bi-card-list"></i> Expert Collective</Link>
                                 <Link onClick={showMenu} to="/community" className=' font-normal text-lg mb-1'><i className="bi bi-people"></i> Community</Link>
                             </div>

@@ -7,7 +7,7 @@ function Footer() {
             <div className="px-5 sm:px-10 translate-y-[30px]">
                 <div className="bg-white box-shadow-grey  px-5 sm:px-10 py-10 sm:py-12 max-w-[800px] m-auto  rounded-3xl ">
                     <div className="flex flex-wrap justify-between md:flex-nowrap items-center">
-                        <span className='font-bold text-xl'>Assumenda sint natus, similique, ullam unde harum, sit expedita ratione earum eaque id ipsum sed </span>
+                        <span className='font-bold text-xl mb-3 '>Assumenda sint natus, similique, ullam unde harum, sit expedita ratione earum eaque id ipsum sed </span>
                         <button className='bg-[#565ADD] min-w-fit px-5 py-3 rounded-3xl text-white text-sm mb-3 sm:mb-0'>Contact Now</button>
                     </div>
                 </div>

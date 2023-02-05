@@ -13,6 +13,9 @@ import LoadingBar from 'react-top-loading-bar'
 import Pricing from './components/Pricing';
 import Community from './components/resources/Community';
 import ExpertCollective from './components/resources/ExpertCollective';
+import Blog from './components/Blog';
+import OurOffering from './components/services/OurOffering';
+import PreviousProjects from './components/services/PreviousProjects';
 
 
 function App() {
@@ -38,7 +41,13 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home key="Home" setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/about' element={<About setAppAlert={setAppAlert} setProgress={setProgress} />} />
+        
+          <Route exact path='/ouroffering' element={<OurOffering setAppAlert={setAppAlert} setProgress={setProgress} />} />
+          <Route exact path='/previousprojects' element={<PreviousProjects setAppAlert={setAppAlert} setProgress={setProgress} />} />
+        
           <Route exact path='/pricing' element={<Pricing setAppAlert={setAppAlert} setProgress={setProgress} />} />
+        
+          <Route exact path='/blog' element={<Blog setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/community' element={<Community setAppAlert={setAppAlert} setProgress={setProgress} />} />
           <Route exact path='/experts-collective' element={<ExpertCollective setAppAlert={setAppAlert} setProgress={setProgress} />} />
 
